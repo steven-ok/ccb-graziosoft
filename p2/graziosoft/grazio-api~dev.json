@@ -1,0 +1,44 @@
+{
+    "packages": {
+        "graziosoft/grazio-api": [
+            {
+                "name": "graziosoft/grazio-api",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-api.git",
+                    "reference": "67e8610429a618e007c64b272aacf2be286e0786"
+                },
+                "require": {
+                    "graziosoft/core": "*"
+                },
+                "time": "2020-06-03T06:18:50+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\api\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ez",
+                        "email": "ez@grazio.org"
+                    }
+                ],
+                "description": "api gateway",
+                "keywords": [
+                    "api",
+                    "cms",
+                    "extension",
+                    "grazio",
+                    "rest"
+                ]
+            }
+        ]
+    }
+}

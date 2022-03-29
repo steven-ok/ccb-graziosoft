@@ -1,0 +1,43 @@
+{
+    "packages": {
+        "graziosoft/core": [
+            {
+                "name": "graziosoft/core",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/core.git",
+                    "reference": "c1f58770fd7c90b39a8092875e0bb72fa535020c"
+                },
+                "require": {
+                    "graziosoft/composer": "*",
+                    "yiisoft/yii2": "*"
+                },
+                "time": "2021-10-04T06:03:30+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\core\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "grazio cms foundation",
+                "keywords": [
+                    "cms",
+                    "grazio",
+                    "package"
+                ]
+            }
+        ]
+    }
+}

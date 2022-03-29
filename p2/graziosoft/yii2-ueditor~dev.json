@@ -1,0 +1,49 @@
+{
+    "packages": {
+        "graziosoft/yii2-ueditor": [
+            {
+                "name": "graziosoft/yii2-ueditor",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/yii2-ueditor.git",
+                    "reference": "308816bbd0e51ee762db63827efb14043d08027f"
+                },
+                "require": {
+                    "moxuandi/yii2-ueditor": "~2.2.0"
+                },
+                "time": "2020-05-31T10:00:19+00:00",
+                "default-branch": true,
+                "type": "yii2-extension",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\ueditor\\": ""
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "ez",
+                        "email": "ez@grazio.org"
+                    }
+                ],
+                "description": "UEditor 是一套开源的在线HTML编辑器，主要用于让用户在网站上获得所见即所得编辑效果，开发人员可以用 UEditor 把传统的多行文本输入框(textarea)替换为可视化的富文本输入框。",
+                "keywords": [
+                    "Editor",
+                    "UEditor",
+                    "extension",
+                    "html 编辑器",
+                    "javascript 编辑器",
+                    "yii2",
+                    "在线编辑器",
+                    "富文本编辑器",
+                    "百度 Editor",
+                    "百度编辑器"
+                ]
+            }
+        ]
+    }
+}

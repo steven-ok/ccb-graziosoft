@@ -1,0 +1,42 @@
+{
+    "packages": {
+        "graziosoft/grazio-baidu-tongji": [
+            {
+                "name": "graziosoft/grazio-baidu-tongji",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-baidu-tongji.git",
+                    "reference": "5a646aaf1366d2aae0b258a12891f7b985bdb7e7"
+                },
+                "require": {
+                    "graziosoft/core": "@dev"
+                },
+                "time": "2020-05-22T02:02:51+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\baidu_tongji\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "baidu tongji module for grazio cms",
+                "keywords": [
+                    "cms",
+                    "package",
+                    "yii2"
+                ]
+            }
+        ]
+    }
+}

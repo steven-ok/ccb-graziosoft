@@ -1,0 +1,46 @@
+{
+    "packages": {
+        "graziosoft/grazio-seo": [
+            {
+                "name": "graziosoft/grazio-seo",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-seo.git",
+                    "reference": "8e3581ee4decbb2e371805d1ba5a349b97f3e8f1"
+                },
+                "require": {
+                    "bestyii/yii2-clipboardjs": "*",
+                    "graziosoft/core": "@dev",
+                    "kartik-v/yii2-widget-select2": "@dev",
+                    "yii2tech/sitemap": "*"
+                },
+                "time": "2020-09-23T09:21:06+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\seo\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "seo manager",
+                "keywords": [
+                    "extension",
+                    "seo",
+                    "sitemap",
+                    "yii2"
+                ]
+            }
+        ]
+    }
+}

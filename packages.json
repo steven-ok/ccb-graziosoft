@@ -1,0 +1,19 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$d02b2f5a8196b788676d74314ce056034c88371a.json": {
+            "sha1": "d02b2f5a8196b788676d74314ce056034c88371a"
+        }
+    },
+    "metadata-url": "/ccb-graziosoft/p2/%package%.json",
+    "available-packages": [
+        "graziosoft/cms-basic",
+        "graziosoft/core",
+        "graziosoft/grazio-admin-ui",
+        "graziosoft/grazio-api",
+        "graziosoft/grazio-baidu-tongji",
+        "graziosoft/grazio-seo",
+        "graziosoft/grazio-setting",
+        "graziosoft/yii2-ueditor"
+    ]
+}

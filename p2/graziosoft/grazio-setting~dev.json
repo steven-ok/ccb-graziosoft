@@ -1,0 +1,62 @@
+{
+    "packages": {
+        "graziosoft/grazio-setting": [
+            {
+                "name": "graziosoft/grazio-setting",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-setting.git",
+                    "reference": "cf13187ac873b10a40573e8aceb81586b77d35e4"
+                },
+                "require": {
+                    "php": ">=7.1.0",
+                    "yii2mod/yii2-editable": "*",
+                    "yii2mod/yii2-enum": "*",
+                    "yiisoft/yii2": "~2.0.10"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "~2.0",
+                    "phpunit/phpunit": "^7.3"
+                },
+                "time": "2021-04-17T11:23:34+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\setting\\": ""
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "php-cs-fixer fix -v --diff --dry-run --allow-risky=yes;"
+                    ],
+                    "phpunit": [
+                        "phpunit --coverage-text"
+                    ],
+                    "test": [
+                        "@phpunit",
+                        "@phpcs"
+                    ]
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "grazio Settings Module",
+                "keywords": [
+                    "config",
+                    "settings",
+                    "storage",
+                    "yii2"
+                ]
+            }
+        ]
+    }
+}

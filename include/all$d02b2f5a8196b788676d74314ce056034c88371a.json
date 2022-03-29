@@ -1,0 +1,440 @@
+{
+    "packages": {
+        "graziosoft/cms-basic": {
+            "dev-master": {
+                "name": "graziosoft/cms-basic",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/composer.git",
+                    "reference": "64e9574678ad8fbaa69b9a6d5349b9f49e4320b9"
+                },
+                "require": {
+                    "2amigos/qrcode-library": "~1.1",
+                    "aliyuncs/oss-sdk-php": "^2.3",
+                    "bestyii/yii2-aliyun-oss": "dev-master",
+                    "cebe/yii2-lifecycle-behavior": "~2.0.0",
+                    "creocoder/yii2-flysystem": "^0.9.3",
+                    "custom/grazio-activity": "dev-master",
+                    "custom/grazio-analytics": "dev-master",
+                    "custom/grazio-bank": "dev-master",
+                    "custom/grazio-brand": "dev-master",
+                    "custom/grazio-channel": "dev-master",
+                    "custom/grazio-decoration": "dev-master",
+                    "custom/grazio-good": "dev-master",
+                    "custom/grazio-leads": "dev-master",
+                    "custom/grazio-manager": "dev-master",
+                    "custom/grazio-referrer": "dev-master",
+                    "custom/grazio-service": "dev-master",
+                    "ext-curl": "*",
+                    "ext-dom": "*",
+                    "ext-json": "*",
+                    "ext-mbstring": "*",
+                    "ext-openssl": "*",
+                    "ext-pcre": "*",
+                    "ext-pdo": "*",
+                    "graziosoft/composer": "dev-master",
+                    "graziosoft/core": "dev-master",
+                    "graziosoft/grazio-admin": "dev-master",
+                    "graziosoft/grazio-admin-ui": "dev-master",
+                    "graziosoft/grazio-api": "dev-master",
+                    "graziosoft/grazio-baidu-tongji": "dev-master",
+                    "graziosoft/grazio-console": "dev-master",
+                    "graziosoft/grazio-gam": "dev-master",
+                    "graziosoft/grazio-image": "dev-master",
+                    "graziosoft/grazio-menu": "dev-master",
+                    "graziosoft/grazio-page": "dev-master",
+                    "graziosoft/grazio-profile": "dev-master",
+                    "graziosoft/grazio-region": "dev-master",
+                    "graziosoft/grazio-sendsms": "dev-master",
+                    "graziosoft/grazio-seo": "dev-master",
+                    "graziosoft/grazio-setting": "dev-master",
+                    "graziosoft/grazio-spotlight": "dev-master",
+                    "graziosoft/grazio-system": "dev-master",
+                    "graziosoft/grazio-user": "dev-master",
+                    "graziosoft/yii2-ueditor": "dev-master",
+                    "kartik-v/yii2-date-range": "*",
+                    "kartik-v/yii2-export": "@dev",
+                    "kop/yii2-scroll-pager": "*",
+                    "mobiledetect/mobiledetectlib": "^2.8",
+                    "php": ">=7.2.0",
+                    "phpoffice/phpexcel": "*",
+                    "yii2tech/ar-position": "*",
+                    "yii2tech/ar-softdelete": "^1.0",
+                    "yiisoft/yii2": "~2.0.32",
+                    "yiisoft/yii2-authclient": "^2.2",
+                    "yiisoft/yii2-bootstrap": "~2.0.0",
+                    "yiisoft/yii2-imagine": "^2.1",
+                    "yiisoft/yii2-queue": "~2.3.0",
+                    "yiisoft/yii2-redis": "^2.0",
+                    "yiisoft/yii2-swiftmailer": "~2.0.0",
+                    "yunpian/yunpian-php-sdk": "~1.0"
+                },
+                "require-dev": {
+                    "bestyii/yii2-gii-rest": "dev-master",
+                    "bestyii/yii2-openapi-reader": "dev-master",
+                    "bizley/migration": "^4.0",
+                    "codeception/base": "^2.2.3",
+                    "codeception/specify": "~0.4.3",
+                    "codeception/verify": "~0.3.1",
+                    "yiisoft/yii2-debug": "~2.0.0",
+                    "yiisoft/yii2-faker": "~2.0.0",
+                    "yiisoft/yii2-gii": "~2.0.0"
+                },
+                "suggest": {
+                    "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
+                    "ext-imagick": "Adds support for more image processing formats and options.",
+                    "ext-intl": "Adds rich internationalization support."
+                },
+                "time": "2022-03-16T07:50:41+00:00",
+                "default-branch": true,
+                "type": "project",
+                "extra": {
+                    "yii\\composer\\Installer::postCreateProject": {
+                        "setPermission": [
+                            {
+                                "runtime": "0777",
+                                "web/assets": "0777",
+                                "web/statics": "0777",
+                                "yii": "0755"
+                            }
+                        ],
+                        "generateCookieValidationKey": [
+                            "app/config/web.php"
+                        ]
+                    }
+                },
+                "scripts": {
+                    "post-create-project-cmd": [
+                        "yii\\composer\\Installer::postCreateProject",
+                        "grazio\\composer\\Installer::postCreateProject"
+                    ]
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "description": "Grazio CMS basic",
+                "homepage": "http://www.grazio.org/",
+                "keywords": [
+                    "cms",
+                    "grazio",
+                    "yii2"
+                ],
+                "support": {
+                    "issues": "https://github.com/GrazioSoft/cms-basic/issues?state=open",
+                    "forum": "https://www.bestyii.com",
+                    "wiki": "https://github.com/GrazioSoft/cms-basic/wiki",
+                    "source": "https://github.com/GrazioSoft/cms-basic"
+                }
+            }
+        },
+        "graziosoft/core": {
+            "dev-master": {
+                "name": "graziosoft/core",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/core.git",
+                    "reference": "c1f58770fd7c90b39a8092875e0bb72fa535020c"
+                },
+                "require": {
+                    "graziosoft/composer": "*",
+                    "yiisoft/yii2": "*"
+                },
+                "time": "2021-10-04T06:03:30+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\core\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "grazio cms foundation",
+                "keywords": [
+                    "cms",
+                    "grazio",
+                    "package"
+                ]
+            }
+        },
+        "graziosoft/grazio-admin-ui": {
+            "dev-master": {
+                "name": "graziosoft/grazio-admin-ui",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-admin-ui.git",
+                    "reference": "9d8dc27ebb3a7106ecc3c5a532980415b0813e12"
+                },
+                "require": {
+                    "npm-asset/chart.js": "^2.9",
+                    "npm-asset/font-awesome": "^5.11",
+                    "npm-asset/perfect-scrollbar": "^1.5",
+                    "yiisoft/yii2": "*",
+                    "yiisoft/yii2-bootstrap4": "*"
+                },
+                "time": "2022-03-29T01:33:39+00:00",
+                "default-branch": true,
+                "type": "yii2-extension",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\adminUI\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "grazio adminUI assets for grazio cms",
+                "keywords": [
+                    "admin",
+                    "adminUI",
+                    "backend",
+                    "cms",
+                    "extension",
+                    "yii2"
+                ]
+            }
+        },
+        "graziosoft/grazio-api": {
+            "dev-master": {
+                "name": "graziosoft/grazio-api",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-api.git",
+                    "reference": "67e8610429a618e007c64b272aacf2be286e0786"
+                },
+                "require": {
+                    "graziosoft/core": "*"
+                },
+                "time": "2020-06-03T06:18:50+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\api\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ez",
+                        "email": "ez@grazio.org"
+                    }
+                ],
+                "description": "api gateway",
+                "keywords": [
+                    "api",
+                    "cms",
+                    "extension",
+                    "grazio",
+                    "rest"
+                ]
+            }
+        },
+        "graziosoft/grazio-baidu-tongji": {
+            "dev-master": {
+                "name": "graziosoft/grazio-baidu-tongji",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-baidu-tongji.git",
+                    "reference": "5a646aaf1366d2aae0b258a12891f7b985bdb7e7"
+                },
+                "require": {
+                    "graziosoft/core": "@dev"
+                },
+                "time": "2020-05-22T02:02:51+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\baidu_tongji\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "baidu tongji module for grazio cms",
+                "keywords": [
+                    "cms",
+                    "package",
+                    "yii2"
+                ]
+            }
+        },
+        "graziosoft/grazio-seo": {
+            "dev-master": {
+                "name": "graziosoft/grazio-seo",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-seo.git",
+                    "reference": "8e3581ee4decbb2e371805d1ba5a349b97f3e8f1"
+                },
+                "require": {
+                    "bestyii/yii2-clipboardjs": "*",
+                    "graziosoft/core": "@dev",
+                    "kartik-v/yii2-widget-select2": "@dev",
+                    "yii2tech/sitemap": "*"
+                },
+                "time": "2020-09-23T09:21:06+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\seo\\": ""
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "seo manager",
+                "keywords": [
+                    "extension",
+                    "seo",
+                    "sitemap",
+                    "yii2"
+                ]
+            }
+        },
+        "graziosoft/grazio-setting": {
+            "dev-master": {
+                "name": "graziosoft/grazio-setting",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/grazio-setting.git",
+                    "reference": "cf13187ac873b10a40573e8aceb81586b77d35e4"
+                },
+                "require": {
+                    "php": ">=7.1.0",
+                    "yii2mod/yii2-editable": "*",
+                    "yii2mod/yii2-enum": "*",
+                    "yiisoft/yii2": "~2.0.10"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "~2.0",
+                    "phpunit/phpunit": "^7.3"
+                },
+                "time": "2021-04-17T11:23:34+00:00",
+                "default-branch": true,
+                "type": "grazio-package",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\setting\\": ""
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "php-cs-fixer fix -v --diff --dry-run --allow-risky=yes;"
+                    ],
+                    "phpunit": [
+                        "phpunit --coverage-text"
+                    ],
+                    "test": [
+                        "@phpunit",
+                        "@phpcs"
+                    ]
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "ezsky",
+                        "email": "ezsky@grazio.org"
+                    }
+                ],
+                "description": "grazio Settings Module",
+                "keywords": [
+                    "config",
+                    "settings",
+                    "storage",
+                    "yii2"
+                ]
+            }
+        },
+        "graziosoft/yii2-ueditor": {
+            "dev-master": {
+                "name": "graziosoft/yii2-ueditor",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/yii2-ueditor.git",
+                    "reference": "308816bbd0e51ee762db63827efb14043d08027f"
+                },
+                "require": {
+                    "moxuandi/yii2-ueditor": "~2.2.0"
+                },
+                "time": "2020-05-31T10:00:19+00:00",
+                "default-branch": true,
+                "type": "yii2-extension",
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\ueditor\\": ""
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "ez",
+                        "email": "ez@grazio.org"
+                    }
+                ],
+                "description": "UEditor 是一套开源的在线HTML编辑器，主要用于让用户在网站上获得所见即所得编辑效果，开发人员可以用 UEditor 把传统的多行文本输入框(textarea)替换为可视化的富文本输入框。",
+                "keywords": [
+                    "Editor",
+                    "UEditor",
+                    "extension",
+                    "html 编辑器",
+                    "javascript 编辑器",
+                    "yii2",
+                    "在线编辑器",
+                    "富文本编辑器",
+                    "百度 Editor",
+                    "百度编辑器"
+                ]
+            }
+        }
+    }
+}
