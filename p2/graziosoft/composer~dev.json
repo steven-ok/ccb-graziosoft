@@ -1,0 +1,65 @@
+{
+    "packages": {
+        "graziosoft/composer": [
+            {
+                "name": "graziosoft/composer",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "git@e.coding.net:steven-ok/graziosoft/composer.git",
+                    "reference": "dacfc7b615f6421f3bc3262ec43b4c8cf244ed1b"
+                },
+                "require": {
+                    "composer-plugin-api": "^1.0 | ^2.0"
+                },
+                "require-dev": {
+                    "composer/composer": "^1.0 | ^2.0@dev",
+                    "phpunit/phpunit": "<7"
+                },
+                "time": "2020-05-06T07:01:59+00:00",
+                "default-branch": true,
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "grazio\\composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\composer\\": ""
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "tests\\": "tests"
+                    }
+                },
+                "license": [
+                    "BSD-3-Clause"
+                ],
+                "authors": [
+                    {
+                        "name": "Qiang Xue",
+                        "email": "qiang.xue@gmail.com"
+                    },
+                    {
+                        "name": "Carsten Brandt",
+                        "email": "mail@cebe.cc"
+                    }
+                ],
+                "description": "The composer plugin for grazio extension installer",
+                "keywords": [
+                    "composer",
+                    "extension installer",
+                    "yii2"
+                ],
+                "support": {
+                    "issues": "https://github.com/yiisoft/yii2-composer/issues",
+                    "forum": "http://www.yiiframework.com/forum/",
+                    "wiki": "http://www.yiiframework.com/wiki/",
+                    "irc": "irc://irc.freenode.net/yii",
+                    "source": "https://github.com/yiisoft/yii2-composer"
+                }
+            }
+        ]
+    }
+}

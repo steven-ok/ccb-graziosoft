@@ -1,131 +1,63 @@
 {
     "packages": {
-        "graziosoft/cms-basic": {
+        "graziosoft/composer": {
             "dev-master": {
-                "name": "graziosoft/cms-basic",
+                "name": "graziosoft/composer",
                 "version": "dev-master",
                 "version_normalized": "dev-master",
                 "source": {
                     "type": "git",
                     "url": "git@e.coding.net:steven-ok/graziosoft/composer.git",
-                    "reference": "64e9574678ad8fbaa69b9a6d5349b9f49e4320b9"
+                    "reference": "dacfc7b615f6421f3bc3262ec43b4c8cf244ed1b"
                 },
                 "require": {
-                    "2amigos/qrcode-library": "~1.1",
-                    "aliyuncs/oss-sdk-php": "^2.3",
-                    "bestyii/yii2-aliyun-oss": "dev-master",
-                    "cebe/yii2-lifecycle-behavior": "~2.0.0",
-                    "creocoder/yii2-flysystem": "^0.9.3",
-                    "custom/grazio-activity": "dev-master",
-                    "custom/grazio-analytics": "dev-master",
-                    "custom/grazio-bank": "dev-master",
-                    "custom/grazio-brand": "dev-master",
-                    "custom/grazio-channel": "dev-master",
-                    "custom/grazio-decoration": "dev-master",
-                    "custom/grazio-good": "dev-master",
-                    "custom/grazio-leads": "dev-master",
-                    "custom/grazio-manager": "dev-master",
-                    "custom/grazio-referrer": "dev-master",
-                    "custom/grazio-service": "dev-master",
-                    "ext-curl": "*",
-                    "ext-dom": "*",
-                    "ext-json": "*",
-                    "ext-mbstring": "*",
-                    "ext-openssl": "*",
-                    "ext-pcre": "*",
-                    "ext-pdo": "*",
-                    "graziosoft/composer": "dev-master",
-                    "graziosoft/core": "dev-master",
-                    "graziosoft/grazio-admin": "dev-master",
-                    "graziosoft/grazio-admin-ui": "dev-master",
-                    "graziosoft/grazio-api": "dev-master",
-                    "graziosoft/grazio-baidu-tongji": "dev-master",
-                    "graziosoft/grazio-console": "dev-master",
-                    "graziosoft/grazio-gam": "dev-master",
-                    "graziosoft/grazio-image": "dev-master",
-                    "graziosoft/grazio-menu": "dev-master",
-                    "graziosoft/grazio-page": "dev-master",
-                    "graziosoft/grazio-profile": "dev-master",
-                    "graziosoft/grazio-region": "dev-master",
-                    "graziosoft/grazio-sendsms": "dev-master",
-                    "graziosoft/grazio-seo": "dev-master",
-                    "graziosoft/grazio-setting": "dev-master",
-                    "graziosoft/grazio-spotlight": "dev-master",
-                    "graziosoft/grazio-system": "dev-master",
-                    "graziosoft/grazio-user": "dev-master",
-                    "graziosoft/yii2-ueditor": "dev-master",
-                    "kartik-v/yii2-date-range": "*",
-                    "kartik-v/yii2-export": "@dev",
-                    "kop/yii2-scroll-pager": "*",
-                    "mobiledetect/mobiledetectlib": "^2.8",
-                    "php": ">=7.2.0",
-                    "phpoffice/phpexcel": "*",
-                    "yii2tech/ar-position": "*",
-                    "yii2tech/ar-softdelete": "^1.0",
-                    "yiisoft/yii2": "~2.0.32",
-                    "yiisoft/yii2-authclient": "^2.2",
-                    "yiisoft/yii2-bootstrap": "~2.0.0",
-                    "yiisoft/yii2-imagine": "^2.1",
-                    "yiisoft/yii2-queue": "~2.3.0",
-                    "yiisoft/yii2-redis": "^2.0",
-                    "yiisoft/yii2-swiftmailer": "~2.0.0",
-                    "yunpian/yunpian-php-sdk": "~1.0"
+                    "composer-plugin-api": "^1.0 | ^2.0"
                 },
                 "require-dev": {
-                    "bestyii/yii2-gii-rest": "dev-master",
-                    "bestyii/yii2-openapi-reader": "dev-master",
-                    "bizley/migration": "^4.0",
-                    "codeception/base": "^2.2.3",
-                    "codeception/specify": "~0.4.3",
-                    "codeception/verify": "~0.3.1",
-                    "yiisoft/yii2-debug": "~2.0.0",
-                    "yiisoft/yii2-faker": "~2.0.0",
-                    "yiisoft/yii2-gii": "~2.0.0"
+                    "composer/composer": "^1.0 | ^2.0@dev",
+                    "phpunit/phpunit": "<7"
                 },
-                "suggest": {
-                    "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
-                    "ext-imagick": "Adds support for more image processing formats and options.",
-                    "ext-intl": "Adds rich internationalization support."
-                },
-                "time": "2022-03-16T07:50:41+00:00",
+                "time": "2020-05-06T07:01:59+00:00",
                 "default-branch": true,
-                "type": "project",
+                "type": "composer-plugin",
                 "extra": {
-                    "yii\\composer\\Installer::postCreateProject": {
-                        "setPermission": [
-                            {
-                                "runtime": "0777",
-                                "web/assets": "0777",
-                                "web/statics": "0777",
-                                "yii": "0755"
-                            }
-                        ],
-                        "generateCookieValidationKey": [
-                            "app/config/web.php"
-                        ]
+                    "class": "grazio\\composer\\Plugin"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "grazio\\composer\\": ""
                     }
                 },
-                "scripts": {
-                    "post-create-project-cmd": [
-                        "yii\\composer\\Installer::postCreateProject",
-                        "grazio\\composer\\Installer::postCreateProject"
-                    ]
+                "autoload-dev": {
+                    "psr-4": {
+                        "tests\\": "tests"
+                    }
                 },
                 "license": [
                     "BSD-3-Clause"
                 ],
-                "description": "Grazio CMS basic",
-                "homepage": "http://www.grazio.org/",
+                "authors": [
+                    {
+                        "name": "Qiang Xue",
+                        "email": "qiang.xue@gmail.com"
+                    },
+                    {
+                        "name": "Carsten Brandt",
+                        "email": "mail@cebe.cc"
+                    }
+                ],
+                "description": "The composer plugin for grazio extension installer",
                 "keywords": [
-                    "cms",
-                    "grazio",
+                    "composer",
+                    "extension installer",
                     "yii2"
                 ],
                 "support": {
-                    "issues": "https://github.com/GrazioSoft/cms-basic/issues?state=open",
-                    "forum": "https://www.bestyii.com",
-                    "wiki": "https://github.com/GrazioSoft/cms-basic/wiki",
-                    "source": "https://github.com/GrazioSoft/cms-basic"
+                    "issues": "https://github.com/yiisoft/yii2-composer/issues",
+                    "forum": "http://www.yiiframework.com/forum/",
+                    "wiki": "http://www.yiiframework.com/wiki/",
+                    "irc": "irc://irc.freenode.net/yii",
+                    "source": "https://github.com/yiisoft/yii2-composer"
                 }
             }
         },

@@ -1,13 +1,13 @@
 {
     "packages": [],
     "includes": {
-        "include/all$d02b2f5a8196b788676d74314ce056034c88371a.json": {
-            "sha1": "d02b2f5a8196b788676d74314ce056034c88371a"
+        "include/all$172b50d181db97e0b6ee59cf349b476d42c2f455.json": {
+            "sha1": "172b50d181db97e0b6ee59cf349b476d42c2f455"
         }
     },
     "metadata-url": "/ccb-graziosoft/p2/%package%.json",
     "available-packages": [
-        "graziosoft/cms-basic",
+        "graziosoft/composer",
         "graziosoft/core",
         "graziosoft/grazio-admin-ui",
         "graziosoft/grazio-api",
